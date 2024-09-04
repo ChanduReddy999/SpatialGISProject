@@ -1,25 +1,25 @@
-create table mpbt_users(first_name varchar(100) not null, last_name varchar(100) not null, email varchar(100) not null unique,
+create table mbpt_users(first_name varchar(100) not null, last_name varchar(100) not null, email varchar(100) not null unique,
 		mobile varchar(10) not null, alternatemobile varchar(10), password varchar(254) not null, organization varchar(254),
 		role varchar(254), user_type varchar(254), department varchar(254), privilage varchar(254), is_approved varchar(100),
 		division varchar(254));
 
-insert into mpbt_users values('chandu', 'reddy', 'chandureddyvadala1999@gmail.com', '9381317527', '8500913002', 'chandureddy',
+insert into mbpt_users values('chandu', 'reddy', 'chandureddyvadala1999@gmail.com', '9381317527', '8500913002', 'chandureddy',
 						'gpl', 'developer', 'dev', 'it', 'backend', 'true', 'kphb');
 						
-insert into mpbt_users values('janardhan', 'reddy', 'chandured99@gmail.com', '9381317527', '8500913002', 'jaanu2002',
+insert into mbpt_users values('janardhan', 'reddy', 'chandured99@gmail.com', '9381317527', '8500913002', 'jaanu2002',
 						'gpl', 'developer', 'dev', 'it', 'backend', 'true', 'kphb');
 
-select * from mpbt_users;
+select * from mbpt_users;
 
 
 -- myAccount details
-select * from mpbt_users where email = 'chandureddyvadala1999@gmail.com';
-select * from mpbt_users where email = 'chandured99@gmail.com';
+select * from mbpt_users where email = 'chandureddyvadala1999@gmail.com';
+select * from mbpt_users where email = 'chandured99@gmail.com';
 
-select * from mpbt_users where email = 'chandured99@gmail.com';
+select * from mbpt_users where email = 'chandured99@gmail.com';
 
 -- edit my profile details
-update mpbt_users set first_name='monika', last_name='reddy', mobile = '7891234563', 
+update mbpt_users set first_name='monika', last_name='reddy', mobile = '7891234563', 
                                                     alternatemobile='9632587410' where email ='chandured99@gmail.com';
 
 
